@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-FACTORY_PATH := device/hardkernel/odroidc4/factory
+FACTORY_PATH := device/hardkernel/odroidn2/factory
 
 PRODUCT_UPGRADE_OUT := $(PRODUCT_OUT)/upgrade
 PACKAGE_CONFIG_FILE := $(PRODUCT_UPGRADE_OUT)/image.cfg
@@ -37,8 +37,8 @@ $(INSTALLED_AML_UPGRADE_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(NEEDED_IM
 	$(hide) mkdir -p $(PRODUCT_UPGRADE_OUT)
 ifneq ("$(wildcard $(FACTORY_PATH)/u-boot.bin)","")
 	$(hide) $(call aml-copy-file, $(FACTORY_PATH)/u-boot.bin)
-else ifneq ("$(wildcard vendor/amlogic/odroidc4/radio/bootloader.img)","")
-	$(hide) $(call aml-copy-file, vendor/amlogic/odroidc4/radio/bootloader.img, u-boot.bin)
+else ifneq ("$(wildcard vendor/hardkernel/odroidn2/radio/bootloader.img)","")
+	$(hide) $(call aml-copy-file, vendor/hardkernel/odroidn2/radio/bootloader.img, u-boot.bin)
 else
 	$(error "no u-boot.bin found in $(FACTORY_PATH)")
 endif

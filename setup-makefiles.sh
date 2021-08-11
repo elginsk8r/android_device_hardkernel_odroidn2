@@ -8,9 +8,9 @@
 
 set -e
 
-export DEVICE=odroidc4
-export DEVICE_COMMON=g12-common
-export VENDOR_COMMON=amlogic
+export DEVICE=odroidn2
+export DEVICE_COMMON=odroid-common
+export VENDOR_COMMON=hardkernel
 export VENDOR_DEVICE=hardkernel
 
 "./../../${VENDOR_COMMON}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

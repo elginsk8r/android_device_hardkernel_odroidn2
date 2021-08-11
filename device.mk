@@ -11,5 +11,8 @@ BOARD_HAVE_BLUETOOTH := false
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
+## Platform
+TARGET_AMLOGIC_SOC := g12b
+
 ## Inherit from the common tree product makefile
-$(call inherit-product, device/amlogic/g12-common/g12.mk)
+$(call inherit-product, device/hardkernel/odroid-common/odroid.mk)
