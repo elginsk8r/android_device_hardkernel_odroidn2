@@ -9,8 +9,8 @@ TARGET_HAS_TEE := false
 # Inherit some common AOSP stuff
 $(call inherit-product, device/google/atv/products/atv_base.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_tv.mk)
+# Inherit some common Evervolv stuff
+$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_tv.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -22,7 +22,7 @@ PRODUCT_DEVICE := odroidn2
 PRODUCT_GMS_CLIENTID_BASE := android-askey-tv
 PRODUCT_MANUFACTURER := hardkernel
 PRODUCT_MODEL := odroid n2
-PRODUCT_NAME := lineage_odroidn2
+PRODUCT_NAME := ev_odroidn2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=adt3 \
