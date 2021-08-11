@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_odroidn2.mk
+    $(LOCAL_DIR)/ev_odroidn2.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_odroidn2-eng \
-    lineage_odroidn2-user \
-    lineage_odroidn2-userdebug
+    ev_odroidn2-eng \
+    ev_odroidn2-user \
+    ev_odroidn2-userdebug
