@@ -6,10 +6,10 @@
 
 include device/amlogic/g12-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/hardkernel/odroidc4
+DEVICE_PATH := device/hardkernel/odroidn2
 
 ## Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := odroidc4
+TARGET_BOOTLOADER_BOARD_NAME := odroidn2
 
 ## DTB
-TARGET_DTB_NAME := sm1_s905y3_odroidc4
+TARGET_DTB_NAME := meson64_odroidn2_android
