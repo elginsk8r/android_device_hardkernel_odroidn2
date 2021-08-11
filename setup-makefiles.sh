@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=odroidc4
+export DEVICE=odroidn2
 export DEVICE_COMMON=g12-common
 export VENDOR_COMMON=amlogic
 export VENDOR_DEVICE=hardkernel
