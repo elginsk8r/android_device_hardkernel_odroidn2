@@ -12,5 +12,12 @@ $(call inherit-product, device/amlogic/g12-common/g12.mk)
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
+# Init-Files    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init-files/fstab.amlogic:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.amlogic
+
+## Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := false
+
 ## Platform
 TARGET_AMLOGIC_SOC := g12b
