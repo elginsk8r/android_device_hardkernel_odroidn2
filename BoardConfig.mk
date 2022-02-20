@@ -13,3 +13,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 10730078208
 else
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12870221824
 endif
+
+-include device/hardkernel/odroidn2/BoardConfigEvervolv.mk
